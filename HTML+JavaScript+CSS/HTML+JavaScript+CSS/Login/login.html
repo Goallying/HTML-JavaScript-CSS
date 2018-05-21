@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        登录页面
+    </head>
+    
+    <body>
+<!--     action 把请求提交给哪个页面 \jsp\servlt\-->
+        <form action="OK.html" method ="post">
+<!--     name 为表单元素的名称       -->
+            用户名:<input type="text" name = "username"/ value="请输入名字..."></br>
+<!--     全角空格　＝　一个汉字 type= text\password\hidden\checkbox\radio(单选)\submit\reset\image     -->
+            密　码:<input type="password" name = "psd"/></br>
+            喜欢的水果:</br>
+<!--      同一组的数据name 必须一样      -->
+            <input type="checkbox" name="v1"/> 西瓜</br>
+            <input type="checkbox" name="v1"/> 苹果</br>
+                您的性别:</br>
+                <input type ="radio" name="v2"/>男</br>
+                <input type="radio" name="v2"/>女</br>
+                隐藏的控件（能够提交数据，同时不影响界面）
+                <input type ="hidden" value="123" name="salary"/ ></br>
+                请选择你的出生地:</br>
+                <select name ="birthlocation">
+                    <option>---请选择---</option>
+                    <option value="bj">北京</option>
+                    <option value="sh">上海</option>
+                    <option value="sz">深圳</option>
+                </select>
+                </br>
+                请留言:</br>
+                <textarea cols="30" rows="10">请输入...</textarea></br>
+                请选择你要上传的文件:</br>
+                <input type="file" name="myfile" />请选择文件
+                
+                </br>
+            <input type="submit" value="登录"/>
+<!--            <input type="image" src="favorite.png" width="64">-->
+            <input type="reset" value="重新填写"/>
+        </form>
+    </body>
+    
+</html>
