@@ -84,14 +84,8 @@
 		55A13CE320B2C4240011FD5F /* HTML+JavaScript+CSS */ = {
 			isa = PBXGroup;
 			children = (
+				55A13D1520B2C7680011FD5F /* Base */,
 				55A13D1020B2C4580011FD5F /* QQmusic */,
-				55A13CFC20B2C43C0011FD5F /* all.html */,
-				55A13CFE20B2C43C0011FD5F /* Hello.html */,
-				55A13CFA20B2C43C0011FD5F /* href.html */,
-				55A13CFB20B2C43C0011FD5F /* left.html */,
-				55A13CFD20B2C43C0011FD5F /* right.html */,
-				55A13D1120B2C4A40011FD5F /* image1.jpg */,
-				55A13D1220B2C4A40011FD5F /* image2.jpeg */,
 				55A13CE420B2C4240011FD5F /* AppDelegate.h */,
 				55A13CE520B2C4240011FD5F /* AppDelegate.m */,
 				55A13CE720B2C4240011FD5F /* ViewController.h */,
@@ -116,6 +110,20 @@
 				55A13D0620B2C4540011FD5F /* qqr2.html */,
 			);
 			path = QQmusic;
+			sourceTree = "<group>";
+		};
+		55A13D1520B2C7680011FD5F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				55A13CFC20B2C43C0011FD5F /* all.html */,
+				55A13CFE20B2C43C0011FD5F /* Hello.html */,
+				55A13CFA20B2C43C0011FD5F /* href.html */,
+				55A13CFB20B2C43C0011FD5F /* left.html */,
+				55A13CFD20B2C43C0011FD5F /* right.html */,
+				55A13D1120B2C4A40011FD5F /* image1.jpg */,
+				55A13D1220B2C4A40011FD5F /* image2.jpeg */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
