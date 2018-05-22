@@ -1,0 +1,27 @@
+
+body{
+/*  可选边框样式，顺序随意  */
+    border:1px solid red ;
+    width:800px;
+    height:1000px;
+/* 0表示上线，auto表示居中   */
+    margin:0 auto;
+}
+
+.s1{
+    width:50px;
+    height:52px;
+    border:1px solid blue;
+    margin-top:10px;
+    margin-left:10px;
+/*    padding-top:5px;*/
+/*    padding-left:5px;*/
+}
+.s1 img{
+    
+/*  也可以用s1的padding 实现*/
+    width:40px;
+    margin-top:5px;
+    margin-left:5px;
+
+}

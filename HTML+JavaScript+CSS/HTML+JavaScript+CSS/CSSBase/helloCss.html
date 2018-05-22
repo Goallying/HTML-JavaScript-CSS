@@ -1,4 +1,6 @@
-
+<!--行内元素span，<a>--，块元素div,块元素占满行，不需要换行，行元素需要手动换行,可相互转换>
+<!--标准流：谁写在前面谁就显示在前面，非标准流脱离元素本来的显示位置-->
+<!--盒子模型-->
 <!DOCTYPE html Public>
 <html>
     <head>
@@ -30,12 +32,15 @@
     </head>
     <body>
 <!--        <span style="font-size:100px;color:blue;">栏目1</span></br>-->
-        <span class="style1">栏目1</span></br>
+<!--display:block  display:inline-->
+        <span style="display:block" class="style1">栏目1</span>
         <span class="style1">栏目2</span></br>
         <span class="style1">栏目3</span></br>
         <span class="style1">栏目4</span></br>
         <span class="style1">栏目5</span></br>
-        <span id="style2">这是一个非常重要的新闻</span></br>
+        <span id="style2">这是一个<span>非常<span>重</span>要</span>的新闻</span></br>
+        <div>这是块元素1</div>
+        <div style="display:inline">这是块元素2</div></br>
     </body>
     
     <body>
@@ -44,8 +49,14 @@
         <a href="http://www.sohu.com/">搜狐</a>
     </body>
     </br>
+    
+    </body>
+    <body>
+    
     <body>
         <a href="#"><img src="dog.jpg" width="300"/></a>
         <img src="lion.jpg" width="300"/>
     </body>
+    
+    
 </html>

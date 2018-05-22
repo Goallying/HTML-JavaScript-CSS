@@ -1,9 +1,15 @@
+/*
+ id 选择器以# 开始, 元素修饰优先级id>class>html. 类选择器冲突，以最后出现的为准，一个元素不能同时多个id选择器！
+ */
+/**/
+
 /*类选择器*/
 .style1{
     font-weight:bold;
     font-size:20px;
     background-color:pink;
     color:black ;
+    font-family:"华文新魏";
 }
 /*id 选择器*/
 #style2{
@@ -17,11 +23,33 @@
 body{
     color:orange;
 }
-/*
- id 选择器以# 开始, 元素修饰优先级id>class>html.
- */
-/**/
+/*通配符选择器，对外边距和内边距清零*/
+*{
+/*    margin:0px;*/
+/*    padding:0px;*/
 
+/*    margin-top:20px;*/
+/*    margin-left:20px;*/
+/*    margin-right:0px;*/
+/*    margin-bottom:0px;*/
+/*    padding=0px;*/
+
+    margin:10px 0px 0px 10px;
+    padding:0px;
+}
+/*父子选择器，避免多层嵌套 ,类选择器也可以*/
+#style2 span {
+    font-style:italic;
+    color:red;
+}
+#style2 span span{
+    font-style:italic;
+    color:red;
+    font-size:50px;
+}
+
+
+/*test*/
 a:link{
     color:black ;
     text-decoration:none;
@@ -32,3 +60,4 @@ a:hover{
 a:visited{
     color:red;
 }
+
