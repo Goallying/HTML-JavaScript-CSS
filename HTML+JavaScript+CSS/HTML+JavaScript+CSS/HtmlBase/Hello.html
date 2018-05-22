@@ -3,6 +3,7 @@
 <html>
     <head>
         <title>first web</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
      
     <body bgcolor = pink>
@@ -37,9 +38,9 @@
         </table>
         </br>
         <font face="Arial" style="font-size:20px">  菜谱</font>
-        <table width= 500 height = 180 align = "center" border=1 bordercolor=#e674fa cellspacing = 0>
-            
-            <tr align = center><td colspan= 3>星期一菜谱</td></tr>
+        <table width= 500 height = 180 align = "center" border=1 bordercolor=#e674fa cellspacing = 0 background="image1.jpg">
+            <!--th 加粗-->
+            <tr align = center><th colspan= 3>星期一菜谱</th></tr>
             
             <tr align = center><td rowspan =2>素菜</td><td>茄子</td><td>扁豆</td></tr>
             <tr align = center><td>豆腐</td><td>白菜</td></tr>
@@ -54,7 +55,7 @@
     <body>
 <!--    <body>-->
 <!--        比如  <div id="top" style="width:100;pxheight:200px;"></div>-->
-        <div style="border:1px solid red;width:200px;position:absolute;left:100px;top:600px;">
+        <div style="border:1px solid red;width:200px;">
         无序列表circle ,square
         <ul type ="square">
             <li>CS</li>
@@ -72,9 +73,12 @@
             <li>LOL</li>
         </ol>
     </body>
-    
-  <font size=7>frameset 请见 all.html</font>
+<!-- 费内存-->
+
+<marquee direction="right"><font size=7>frameset 请见 all.html</font>
+    <img src="image1.jpg" width= 100/>
+</marquee>
     <blink>闪不闪</blink>
- 
-    
+<!-- 视频 远程不支持 url可远程播放-->
+<embed src ="" width=400/>
 </html>

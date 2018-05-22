@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
+@interface ViewController ()<UIWebViewDelegate>
+@property (nonatomic ,strong)UIWebView * webView ;
 @end
 
 @implementation ViewController
@@ -17,12 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:self.webView];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIWebView *)webView {
+    if (_webView == nil) {
+        _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+        _webView.scalesPageToFit = YES;
+        NSURL *url = [[NSBundle mainBundle] URLForResource:@"helloCss" withExtension:@"html"];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        [_webView loadRequest:request];
+        _webView.delegate = self;
+    }
+    
+    return _webView;
 }
 
 
