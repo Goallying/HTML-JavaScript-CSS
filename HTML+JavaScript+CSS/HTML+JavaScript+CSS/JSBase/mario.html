@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mario.css"/>
+    <script language="javascript">
+        function Mario(){
+            this.x = 0;
+            this.y = 0;
+            
+            this.move = function(direction){
+                var mario = document.getElementById("mario");
+                switch (direction){
+                    case 1:{
+                    }
+                    break;
+                    case 2:{
+<!--      dom                  -->
+                        var left = mario.style.left;
+                        left = parseInt(left.substr(0,left.length-2));
+                        mario.style.left = (left+10)+"px";
+                        
+                    }
+                    break;
+                    case 3:{
+                    }
+                    break;
+                    case 4:{
+         
+                    }
+                    break;
+                }
+            }
+        }
+    
+    var mario = new Mario();
+    function marioMove(direction){
+        mario.move(direction);
+    }
+    </script>
+</head>
+
+<body>
+    <div class="gamediv">
+        <img id="mario" src="mario.jpg" style="top:0px;left:0px;"/>
+    </div>
+    
+    <div>
+        <table class="tablestyle">
+            <tr><td colspan=3>游戏键盘 </td></tr>
+            <tr><td></td><td><input type="button" value="⬆️" onclick="marioMove(1)"/></td><td></td></tr>
+            <tr><td><input type="button" value="⬅️" onclick="marioMove(4)"/></td><td></td><td><input type="button" value="➡️" onclick="marioMove(2)"/></td></tr>
+            <tr><td></td><td><input type="button" value="⬇️" onclick="marioMove(3)"/></td><td></td></tr>
+        </table>
+    </div>
+</body>
+</html>

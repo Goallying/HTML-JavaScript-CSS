@@ -17,6 +17,10 @@
 		557A15EA20B50A5400033B6D /* float_position.css in Resources */ = {isa = PBXBuildFile; fileRef = 557A15E920B50A5400033B6D /* float_position.css */; };
 		557A15EC20B519D100033B6D /* sohulayout.html in Resources */ = {isa = PBXBuildFile; fileRef = 557A15EB20B519D100033B6D /* sohulayout.html */; };
 		557A15EE20B519DB00033B6D /* sohu.css in Resources */ = {isa = PBXBuildFile; fileRef = 557A15ED20B519DB00033B6D /* sohu.css */; };
+		557A15F120B53F5100033B6D /* hellojs.html in Resources */ = {isa = PBXBuildFile; fileRef = 557A15F020B53F5100033B6D /* hellojs.html */; };
+		557A15F320B5635500033B6D /* mario.html in Resources */ = {isa = PBXBuildFile; fileRef = 557A15F220B5635500033B6D /* mario.html */; };
+		557A15F520B5649200033B6D /* mario.css in Resources */ = {isa = PBXBuildFile; fileRef = 557A15F420B5649200033B6D /* mario.css */; };
+		557A15F720B5656D00033B6D /* mario.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 557A15F620B5656C00033B6D /* mario.jpg */; };
 		55A13CE620B2C4240011FD5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A13CE520B2C4240011FD5F /* AppDelegate.m */; };
 		55A13CE920B2C4240011FD5F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A13CE820B2C4240011FD5F /* ViewController.m */; };
 		55A13CEC20B2C4240011FD5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A13CEA20B2C4240011FD5F /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		557A15E920B50A5400033B6D /* float_position.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = float_position.css; sourceTree = "<group>"; };
 		557A15EB20B519D100033B6D /* sohulayout.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = sohulayout.html; sourceTree = "<group>"; };
 		557A15ED20B519DB00033B6D /* sohu.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = sohu.css; sourceTree = "<group>"; };
+		557A15F020B53F5100033B6D /* hellojs.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = hellojs.html; sourceTree = "<group>"; };
+		557A15F220B5635500033B6D /* mario.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = mario.html; sourceTree = "<group>"; };
+		557A15F420B5649200033B6D /* mario.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = mario.css; sourceTree = "<group>"; };
+		557A15F620B5656C00033B6D /* mario.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mario.jpg; sourceTree = "<group>"; };
 		55A13CE120B2C4240011FD5F /* HTML+JavaScript+CSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTML+JavaScript+CSS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A13CE420B2C4240011FD5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55A13CE520B2C4240011FD5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,6 +116,17 @@
 			path = CSSBase;
 			sourceTree = "<group>";
 		};
+		557A15EF20B5381800033B6D /* JSBase */ = {
+			isa = PBXGroup;
+			children = (
+				557A15F620B5656C00033B6D /* mario.jpg */,
+				557A15F020B53F5100033B6D /* hellojs.html */,
+				557A15F220B5635500033B6D /* mario.html */,
+				557A15F420B5649200033B6D /* mario.css */,
+			);
+			path = JSBase;
+			sourceTree = "<group>";
+		};
 		55A13CD820B2C4230011FD5F = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +146,7 @@
 		55A13CE320B2C4240011FD5F /* HTML+JavaScript+CSS */ = {
 			isa = PBXGroup;
 			children = (
+				557A15EF20B5381800033B6D /* JSBase */,
 				556ED91420B3DE3A00DEE777 /* CSSBase */,
 				AE9FE1DE20B2EC220043145C /* HtmlLogin */,
 				55A13D1520B2C7680011FD5F /* HtmlBase */,
@@ -239,15 +259,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557A15F120B53F5100033B6D /* hellojs.html in Resources */,
 				55A13CF120B2C4240011FD5F /* LaunchScreen.storyboard in Resources */,
 				55A13D0320B2C43C0011FD5F /* Hello.html in Resources */,
 				556ED91C20B3F73B00DEE777 /* news.css in Resources */,
 				557A15EC20B519D100033B6D /* sohulayout.html in Resources */,
 				55A13CFF20B2C43C0011FD5F /* href.html in Resources */,
+				557A15F720B5656D00033B6D /* mario.jpg in Resources */,
 				55A13D0F20B2C4540011FD5F /* QQHtml.html in Resources */,
 				55A13D1420B2C4A40011FD5F /* image2.jpeg in Resources */,
 				AE9FE1E020B2EC370043145C /* login.html in Resources */,
 				55A13D0E20B2C4540011FD5F /* qqt.html in Resources */,
+				557A15F320B5635500033B6D /* mario.html in Resources */,
 				55A13D0C20B2C4540011FD5F /* qqr2.html in Resources */,
 				55A13D0220B2C43C0011FD5F /* right.html in Resources */,
 				556ED91620B3DE6600DEE777 /* helloCss.html in Resources */,
@@ -261,6 +284,7 @@
 				55A13D0A20B2C4540011FD5F /* qql.html in Resources */,
 				556ED91820B3F25800DEE777 /* dog.jpg in Resources */,
 				557A15E820B5058500033B6D /* floatTest.html in Resources */,
+				557A15F520B5649200033B6D /* mario.css in Resources */,
 				55A13D1320B2C4A40011FD5F /* image1.jpg in Resources */,
 				55A13CEE20B2C4240011FD5F /* Assets.xcassets in Resources */,
 				55A13CEC20B2C4240011FD5F /* Main.storyboard in Resources */,
