@@ -1,0 +1,20 @@
+<!--浮动， 清除浮动，定位static,absolute,relative,fixed(指认body),inherit继承父类定位方式-->
+<!DOCTYPE html Public>
+<html>
+    <head>
+        <title>xxxxxxxxxxxx</title>
+        <link rel="stylesheet" type="text/css" href="float_position.css"/>
+    </head>
+
+    <body>
+<!--        style="float:left" 让出左边位置-->
+<!--        <img style="float:left" src="dog.jpg" width="200px"/>得益于汽车整车进口关税降低的政策，目前Tesla已经调整了 Model S 和 Model X 中国大陆在售车型的价格，并已经传达到全中国所有销售网点，欲在近期购车的客户请前往各地门店，或致电4009190707咨询。专注于客户的利益并使其最大化，始终是 Tesla 的目标。因此，我们决定：所有未交付车辆，将会按照新关税下的车价交付，无论车辆何时清关；同时，少量准现车同时享受调整后的价格，可尽快提车，您无需等待至7月1日。-->
+            <div class="s1">内容1</div>
+          
+            <div class="s1">内容3</div>
+            <div class="s1">内容4</div>
+            
+<!--   s2(specal+s1) 改变s2 内容二也移动 此时s2 是relative！否则内容二参照body ，比较难理解       -->
+            <div class="s2">  <div id ="special" class="s1">内容2</div>  </div>
+    </body>
+</html>

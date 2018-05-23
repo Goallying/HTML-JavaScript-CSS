@@ -1,0 +1,81 @@
+
+body {
+    width:950px;
+    margin:0 auto;
+    border:1px solid lightgray;
+}
+
+.top{
+    width:950px;
+    height:22px;
+    background-color:pink;
+}
+.login {
+    width:200px;
+    height:22px;
+    float:left;
+}
+.logo {
+    width:137px;
+    height:68px;
+    float:left;
+    background-color:yellow;
+    margin-top:5px;
+}
+.logo img{
+    width:137px;
+    height:68px;
+}
+.nav {
+    width:808px;
+    height:68px;
+    background-color:blue;
+    margin-left:5px;
+    float:left;
+    margin-top:5px;
+}
+.ad {
+    width:950px;
+    height:212px;
+    margin-top:5px;
+    float:left;
+    border:1px solid silver;
+}
+.stuad{
+    width:126px;
+    height:196px;
+    background-color:#FC7E8C;
+    float:left;
+    margin-top:5px;
+    margin-left:5px;
+}
+.ad1 {
+    width:453px;
+    height:196px;
+    margin-top:5px;
+    margin-left:5px;
+    float:left;
+    background-color:#FC7E8C;
+}
+.housead{
+    width:150px;
+    height:196px;
+    margin-top:5px;
+    margin-left:5px;
+    float:left;
+    background-color:#FC7E8C;
+}
+.picad {
+    width:180px;
+    height:212px;
+    float:right;
+    border-left:1px solid silver;
+/*   可以用一行一列的表格实现正中排布   */
+    text-align:center;
+}
+.picad img {
+    width:160px;
+    height:180px;
+    margin-top:5px;
+    
+}
