@@ -8,15 +8,30 @@
 <!--                window.moveTo(100,100);-->
 <!--window.resizeTo(400,400); 调整到400-->
 <!--window.resizeBy（100，200）把窗口宽加100，高加200-->
-<!--window.open("xxx.html" ,"_self&_blank")  width\height\location=no\yes-->
-window.alert("alert");
+<!-- width\height\location=no\yes-->
+<!--window.alert("alert");-->
             }
+        
+<!--        function test1(){-->
+<!--            window.open("newhtml.html" ,"_blank","width=200,height=100,location=no")-->
+<!--        }-->
+        
+        var html ;
+        function test2(){
+            html = window.open("newhtml.html","_blank","width=400,height=400,location=no");
+        }
+        function test3(){
+            html.document.getElementById("info").value = "hhahahhhahha";
+        }
         </script>
     </head>
     
     <body>
         这是一个窗口
         </br>
-        <input type = "button" value="移动" onclick="test1()"/>
+        <input type = "button" value="移动" onclick="test2()"/>
+        <span id ="myspan">mesage</span>
+        <input type = "button" value="发送" onclick="test3()"/>
+
     </body>
 </html>

@@ -1,0 +1,29 @@
+
+<!Doctype html>
+<html>
+    <head>
+        <script language="javascript">
+            function $(id){
+                
+                return document.getElementById(id);
+            }
+            function login(){
+
+                if($("name").value =="zlf" && $("psw").value=="zlf"){
+                    return true ;
+                }else{
+                    return false;
+                }
+            }
+   
+        </script>
+    </head>
+    
+    <body>
+        <form action="newhtml.html">
+            u:<input type="text" id="name"/></br>
+            p:<input type="text" id="psw"/></br>
+            <input type="submit" value="登录" onclick="return login()"/>
+        </form>
+    </body>
+</html>

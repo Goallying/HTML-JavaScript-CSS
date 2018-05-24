@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        新窗口/登录成功
+
+        <script language="javascript">
+            function notice(){
+                var val = document.getElementById("info").value;
+                alert(val);
+                opener.document.getElementById("myspan").innerText = val;
+                
+            }
+        </script>
+    </head>
+    
+    <body>
+        <input type="text" value="" id ="info"/>
+        <input type="button" value="通知父窗口" onclick="notice();"/>
+    </body>
+</html>
+
+
+
+
