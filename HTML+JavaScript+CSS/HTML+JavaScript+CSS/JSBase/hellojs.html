@@ -4,8 +4,10 @@
 <!--   js 代码一般写在head 实际也可以在别的位置 -->
 <!--     js中变量是var表示，无论实际类型是什么，是个弱类型语言 甚至不写var,变量数据类型由js引擎觉得    -->
 <!-- 全为空，返回最后一个值-->
+<!--DOM=Document object model，BOM-浏览器对象模型-->
     <head>
 <!--        <script language="javascript" src="js.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="hellojs.css"/>
         <script language="javascript">
 <!--            window.alert("hello world");-->
 <!--            num1= 1.1;-->
@@ -13,15 +15,70 @@
 <!--            var result= num1 + num2;-->
 <!--            window.alert("num1 是"+ typeof num1);-->
 
+
 <!--                var v1 = window.prompt("v1");-->
 <!--                var v2 = window.prompt("v2");-->
 <!--                document.writeln("="+(parseFloat(v1)+parseFloat(v2)));-->
 
+<!-- window.confirm("delete");-->
 
+        function showTime(){
+            document.getElementById("timer").innerText = new Date().toLocaleString();
+        }
+        <!--   clearInterval(timer);     -->
+<!--    setTimeout()    -->
+setInterval("showTime()",1000);
+
+<!--变色demo-->
+        function colorfunc(obj){
+<!--            var div = document.getElementById('div1');-->
+<!--            if(obj.value=="红色"){-->
+<!--<!--                div.style.width="800px"; background-Color 不可用-->-->
+<!--                    div.style.backgroundColor ="red";-->
+<!--            }else if(obj.value=="蓝色"){-->
+<!--                    div.style.backgroundColor ="blue";-->
+<!--            }-->
+
+<!--不清楚为什么出不来...cssRules也不行-->
+                var cssRules = document.styleSheets[0].rules;
+                var style1 = cssRules[0];
+                window.alert(obj.value);
+                if(obj.value == "红色"){
+                    style1.style.backgroundColor = "red";
+                }else{
+                    style1.style.backgroundColor = "blue";
+                }
+
+        }
+        
+        function onfocusfunc(){
+        }
+        function onload(){
+             window.alert("onload");
+        }
+        function unonload(){
+            window.alert(close);
+        }
+        function onbeforeunload(){
+             window.alert("onbeforeunload");
+        }
+        function test1 (){
+             window.alert("别右击");
+             return false;
+        }
+        function test2 (){
+            window.alert("不允许选择文字");
+            return false;
+        }
         </script>
     </head>
     
-    <body>
-      
+    <body onselectstart="return test2()" oncontextmenu="return test1()" onload="onload()" onbeforeunload="onbeforeunload()" unonload="onunload()">
+<!--        <div  id ="div1" style="width:400px;height:300px;background-color:red"> div1</div>-->
+          <div  id ="div1" class="divstyle"> div1</div>
+          <input type="button" value="红色" onclick="colorfunc(this) ,otherfunc()" />
+          <input type="button" value="蓝色" onclick="colorfunc(this)"/>
+          <input type="text"  id ="text1" onfocus="onfocusfunc()"/>
+          <span id="timer">时间</span>
     </body>
 </html>

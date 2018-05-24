@@ -12,6 +12,9 @@
                 var mario = document.getElementById("mario");
                 switch (direction){
                     case 1:{
+                        var bottom = mario.style.bottom;
+                        bottom = parseInt(bottom.substr(0,bottom.length-2));
+                        mario.style.bottom = (bottom+10)+"px";
                     }
                     break;
                     case 2:{
@@ -19,38 +22,40 @@
                         var left = mario.style.left;
                         left = parseInt(left.substr(0,left.length-2));
                         mario.style.left = (left+10)+"px";
-                        
                     }
                     break;
                     case 3:{
+                        
+                        var top = mario.style.top;
+                        top = parseInt(top.substr(0,top.length-2));
+                        mario.style.top = (top+10)+"px";
                     }
                     break;
                     case 4:{
-         
+                        var left = mario.style.right;
+                        right = parseInt(right.substr(0,right.length-2));
+                        mario.style.right = (right+10)+"px";
                     }
                     break;
                 }
             }
         }
-    
     var mario = new Mario();
-    function marioMove(direction){
-        mario.move(direction);
-    }
     </script>
 </head>
 
 <body>
+<!-- gamediv 必须使用非标准流relative   -->
     <div class="gamediv">
-        <img id="mario" src="mario.jpg" style="top:0px;left:0px;"/>
+        <img id="mario" src="mario.jpg" style="top:0px;left:0px;bottom=0px;right=0px;"/>
     </div>
     
     <div>
         <table class="tablestyle">
-            <tr><td colspan=3>游戏键盘 </td></tr>
-            <tr><td></td><td><input type="button" value="⬆️" onclick="marioMove(1)"/></td><td></td></tr>
-            <tr><td><input type="button" value="⬅️" onclick="marioMove(4)"/></td><td></td><td><input type="button" value="➡️" onclick="marioMove(2)"/></td></tr>
-            <tr><td></td><td><input type="button" value="⬇️" onclick="marioMove(3)"/></td><td></td></tr>
+            <tr align="center"><td colspan=3>游戏键盘 </td></tr>
+            <tr><td></td><td><input type="button" value="⬆️" onclick="mario.move(1)"/></td><td></td></tr>
+            <tr><td><input type="button" value="⬅️" onclick="mario.move(4)"/></td><td></td><td><input type="button" value="➡️" onclick="mario.move(2)"/></td></tr>
+            <tr><td></td><td><input type="button" value="⬇️" onclick="mario.move(3)"/></td><td></td></tr>
         </table>
     </div>
 </body>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5539428920B660F00084C23F /* hellojs.css in Resources */ = {isa = PBXBuildFile; fileRef = 5539428820B660F00084C23F /* hellojs.css */; };
+		5539428D20B6A2FF0084C23F /* OtherJs.html in Resources */ = {isa = PBXBuildFile; fileRef = 5539428C20B6A2FF0084C23F /* OtherJs.html */; };
 		556ED91620B3DE6600DEE777 /* helloCss.html in Resources */ = {isa = PBXBuildFile; fileRef = 556ED91520B3DE6600DEE777 /* helloCss.html */; };
 		556ED91820B3F25800DEE777 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 556ED91720B3F25800DEE777 /* dog.jpg */; };
 		556ED91A20B3F27200DEE777 /* lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 556ED91920B3F27200DEE777 /* lion.jpg */; };
@@ -46,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5539428820B660F00084C23F /* hellojs.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = hellojs.css; sourceTree = "<group>"; };
+		5539428C20B6A2FF0084C23F /* OtherJs.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = OtherJs.html; sourceTree = "<group>"; };
 		556ED91520B3DE6600DEE777 /* helloCss.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = helloCss.html; sourceTree = "<group>"; };
 		556ED91720B3F25800DEE777 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		556ED91920B3F27200DEE777 /* lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpg; sourceTree = "<group>"; };
@@ -121,8 +125,10 @@
 			children = (
 				557A15F620B5656C00033B6D /* mario.jpg */,
 				557A15F020B53F5100033B6D /* hellojs.html */,
+				5539428820B660F00084C23F /* hellojs.css */,
 				557A15F220B5635500033B6D /* mario.html */,
 				557A15F420B5649200033B6D /* mario.css */,
+				5539428C20B6A2FF0084C23F /* OtherJs.html */,
 			);
 			path = JSBase;
 			sourceTree = "<group>";
@@ -276,9 +282,11 @@
 				556ED91620B3DE6600DEE777 /* helloCss.html in Resources */,
 				55A13D0D20B2C4540011FD5F /* qqr1.html in Resources */,
 				556ED92020B40F4500DEE777 /* box.css in Resources */,
+				5539428920B660F00084C23F /* hellojs.css in Resources */,
 				557A15EE20B519DB00033B6D /* sohu.css in Resources */,
 				556ED91E20B40F3600DEE777 /* Box.html in Resources */,
 				55A13D0120B2C43C0011FD5F /* all.html in Resources */,
+				5539428D20B6A2FF0084C23F /* OtherJs.html in Resources */,
 				55A13D0B20B2C4540011FD5F /* qqimage.jpg in Resources */,
 				AE9FE1E220B2EFEA0043145C /* OK.html in Resources */,
 				55A13D0A20B2C4540011FD5F /* qql.html in Resources */,
