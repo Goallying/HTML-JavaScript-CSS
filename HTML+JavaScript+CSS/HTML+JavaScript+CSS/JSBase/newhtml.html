@@ -11,12 +11,19 @@
                 opener.document.getElementById("myspan").innerText = val;
                 
             }
+        function goback(){
+            
+            history.go(-1);
+<!--            history.back();-->
+        }
         </script>
     </head>
     
     <body>
         <input type="text" value="" id ="info"/>
         <input type="button" value="通知父窗口" onclick="notice();"/>
+        
+        <a href="#" onclick="goback()">返回上级页面</a>
     </body>
 </html>
 

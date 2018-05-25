@@ -3,7 +3,7 @@
 <html>
     <head>
         
-        <script language="javascript">
+        <script language="javascript"  type= "text/javascript">
             function test1(){
 <!--                window.moveTo(100,100);-->
 <!--window.resizeTo(400,400); 调整到400-->
@@ -15,7 +15,7 @@
 <!--        function test1(){-->
 <!--            window.open("newhtml.html" ,"_blank","width=200,height=100,location=no")-->
 <!--        }-->
-        
+<!--        -->
         var html ;
         function test2(){
             html = window.open("newhtml.html","_blank","width=400,height=400,location=no");
@@ -23,6 +23,39 @@
         function test3(){
             html.document.getElementById("info").value = "hhahahhhahha";
         }
+        function test4(){
+            location.reload();
+        }
+        function test5(){
+            window.alert("绑定按钮事件");
+        }
+        function test6(){
+            window.alert("once");
+<!--      配合attachEvent("onclick",test6)      -->
+            document.getElementById("btn2").detachEvent("onclick",test6);
+        }
+        
+        function test7(event){
+            if(event.keyCode <48 || event.keyCode>57){
+                window.alert("NaN");
+                window.event.returnValue=false;
+            }
+        }
+<!--   状态栏     -->
+        window.status = "haahahahhaha";
+        document.write("<p>Name:");
+<!--    浏览器名称    -->
+        document.write(navigator.appName+"</p>" + navigator.platform+"</p>"+ navigator.systemLanguage+"</p>");
+        document.write(screen.width);
+        
+<!--   ascll码0-9 = 48-57-->
+<!--    for (int i = 0; i < string.length; i++) {-->
+<!--        NSString *subString = [string substringWithRange:NSMakeRange(i, 1)];-->
+<!--        int ascii = [subString characterAtIndex:0];-->
+<!--    }-->
+<!--    return YES;-->
+
+
         </script>
     </head>
     
@@ -32,6 +65,16 @@
         <input type = "button" value="移动" onclick="test2()"/>
         <span id ="myspan">mesage</span>
         <input type = "button" value="发送" onclick="test3()"/>
-
+        <input type = "button" value="刷新" onclick="test4()"/>
+        </br>
+        <a href= "newhtml.html">goto b</a>
+        </br>
+        <input id="btn1" type = "button" value="butttt"/>
+        <script language="javascript"  type= "text/javascript">
+            document.getElementById("btn1").onclick = test5;
+        </script>
+        <input id = "btn2" type = "button" value="只能点一次"  onclick="test6()"/>
+<!--   onkey up\press     -->
+        <input type="text" onkeypress="test7(event)"/>
     </body>
 </html>

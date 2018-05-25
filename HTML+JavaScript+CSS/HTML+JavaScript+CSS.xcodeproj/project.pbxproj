@@ -42,6 +42,7 @@
 		55A13D0F20B2C4540011FD5F /* QQHtml.html in Resources */ = {isa = PBXBuildFile; fileRef = 55A13D0920B2C4540011FD5F /* QQHtml.html */; };
 		55A13D1320B2C4A40011FD5F /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55A13D1120B2C4A40011FD5F /* image1.jpg */; };
 		55A13D1420B2C4A40011FD5F /* image2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 55A13D1220B2C4A40011FD5F /* image2.jpeg */; };
+		55B9695120B7E3E2008F61A6 /* document.html in Resources */ = {isa = PBXBuildFile; fileRef = 55B9695020B7E3E2008F61A6 /* document.html */; };
 		AE3DDE9820B6F01E003921AB /* JSLogin.html in Resources */ = {isa = PBXBuildFile; fileRef = AE3DDE9720B6F01E003921AB /* JSLogin.html */; };
 		AE3DDE9A20B6F394003921AB /* newhtml.html in Resources */ = {isa = PBXBuildFile; fileRef = AE3DDE9920B6F394003921AB /* newhtml.html */; };
 		AE9FE1E020B2EC370043145C /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = AE9FE1DF20B2EC370043145C /* login.html */; };
@@ -89,6 +90,7 @@
 		55A13D0920B2C4540011FD5F /* QQHtml.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = QQHtml.html; sourceTree = "<group>"; };
 		55A13D1120B2C4A40011FD5F /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
 		55A13D1220B2C4A40011FD5F /* image2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpeg; sourceTree = "<group>"; };
+		55B9695020B7E3E2008F61A6 /* document.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = document.html; sourceTree = "<group>"; };
 		AE3DDE9720B6F01E003921AB /* JSLogin.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = JSLogin.html; sourceTree = "<group>"; };
 		AE3DDE9920B6F394003921AB /* newhtml.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = newhtml.html; sourceTree = "<group>"; };
 		AE9FE1DF20B2EC370043145C /* login.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				5539428C20B6A2FF0084C23F /* OtherJs.html */,
 				AE3DDE9720B6F01E003921AB /* JSLogin.html */,
 				AE3DDE9920B6F394003921AB /* newhtml.html */,
+				55B9695020B7E3E2008F61A6 /* document.html */,
 			);
 			path = JSBase;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				55A13D1320B2C4A40011FD5F /* image1.jpg in Resources */,
 				55A13CEE20B2C4240011FD5F /* Assets.xcassets in Resources */,
 				55A13CEC20B2C4240011FD5F /* Main.storyboard in Resources */,
+				55B9695120B7E3E2008F61A6 /* document.html in Resources */,
 				55A13D0020B2C43C0011FD5F /* left.html in Resources */,
 				AE9FE1E420B2F0DC0043145C /* favorite.png in Resources */,
 				556ED91A20B3F27200DEE777 /* lion.jpg in Resources */,
