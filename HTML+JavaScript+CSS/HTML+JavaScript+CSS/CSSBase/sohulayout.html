@@ -3,6 +3,26 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="sohu.css"/>
+        <script language="javascript">
+            function change (val ,obj){
+<!--                window.alert(val);-->
+                if(val == "zs"){
+                    obj.style.backgroundColor="#FFC12D";
+                    $("zs").style.display ="block";
+                    $("rz").style.display="none";
+                }else if (val == "rz"){
+                    obj.style.backgroundColor="#FFC12D";
+                    $("zs").style.display ="none";
+                    $("rz").style.display  ="block";
+                }
+            }
+        function change2(obj){
+            obj.style.backgroundColor= "silver";
+        }
+        function $(id){
+            return document.getElementById(id);
+        }
+        </script>
     </head>
     
     <body>
@@ -19,7 +39,44 @@
        
 <!--    广告   -->
        <div class="ad">
-           <div class="stuad">招生广告</div>
+           <div class="stuad">
+               <div class="zstitle">
+                   <ul>
+                       <li onmouseover="change('zs' ,this)"  onmouseout="change2(this)">招生</li>
+                       <li onmouseover="change('rz' ,this)"  onmouseout="change2(this)">热招</li>
+                       <li>出国</li>
+                    </ul>
+               </div>
+<!--     超链接div          -->
+            <div id ="zs" class ="zs" >
+                </ul>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                <li><a href="#">招生连接</a></li>
+                </ul>
+            </div>
+            <div  id="rz" class ="rz"  onmouseover="change(this)">
+                </ul>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                <li><a href="#">热招连接</a></li>
+                </ul>
+            </div>
+           </div>
+           
+           
            <div class="ad1">ad1</div>
            <div class="housead">房地产广告</div>
            <div class="picad"><img src="lion.jpg"/></div>

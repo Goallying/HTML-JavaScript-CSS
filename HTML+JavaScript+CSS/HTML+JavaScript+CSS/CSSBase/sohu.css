@@ -44,11 +44,51 @@ body {
 .stuad{
     width:126px;
     height:196px;
-    background-color:#FC7E8C;
+/*    background-color:#FC7E8C;*/
     float:left;
     margin-top:5px;
     margin-left:5px;
 }
+.zstitle {
+    font-size:12px;
+    width:21px;
+    height:196px;
+    float:left;
+}
+.zstitle ul {
+    padding:0px;
+    margin:0px;
+    float:left;
+}
+.zstitle  li{
+    list-style-type:none;
+    background-color:silver;
+    width:21px;
+    height:59px;
+    margin-top:5px;
+    text-align:center;
+}
+.zs,.rz {
+    width:100px;
+    height:186px;
+    float:left;
+    margin-left:4px;
+    margin-top:5px;
+}
+.zs ul ,.rz ul{
+    padding:0px;
+    float:left;
+    margin-top:5px;
+}
+.zs li,.rz li{
+    list-style-type:none;
+    line-height:20px;
+}
+.rz {
+    display:none;
+}
+
+
 .ad1 {
     width:453px;
     height:196px;

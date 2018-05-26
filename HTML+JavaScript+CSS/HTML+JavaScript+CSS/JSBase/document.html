@@ -53,18 +53,20 @@ window.alert($("adiv").childNodes.length + $("adiv").parentNode);
         function $(id){
             return document.getElementById(id)
         }
+        <!--    鼠标事件:onMouse Down\Move\Up  鼠标样式cursor:hand, event:clientX\Y  -->
         </script>
     </head>
     
-    <body>
+<!--   background-position-y  无限叠加在一起的图片 aaaaa[o]aaaa 显示背景图的不同部分-->
+    <body style="background-image:url('backimage.jpeg')">
         
-        <input type="checkbox" name="v1" value="西瓜"/> 西瓜</br>
+        <input type="checkbox" name="v1" value="西瓜"/><span style="color:white;"> 西瓜</span></br>
         <input type="checkbox" name="v1" value="冬瓜"/> 冬瓜</br>
         <input type="checkbox" name="v1" value="南瓜"/> 南瓜</br>
         <input type="checkbox" name="v1" value="北瓜"/> 北瓜</br>
         <input type="button" value="click" onclick="test6()"/>
         <input type="button" value="delete" onclick="test4()"/>
-        <span id="aspan">xxxxxx</span>
+        <span id="aspan" style ="color:white;">xxxxxx</span>
 <div id="adiv" style="width:200px;height:400px;border:1px solid red">div
     <input type="text" value ="name"/>
 </div>

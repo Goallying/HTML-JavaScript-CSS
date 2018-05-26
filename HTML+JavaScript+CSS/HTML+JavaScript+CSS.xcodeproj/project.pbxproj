@@ -48,6 +48,7 @@
 		AE9FE1E020B2EC370043145C /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = AE9FE1DF20B2EC370043145C /* login.html */; };
 		AE9FE1E220B2EFEA0043145C /* OK.html in Resources */ = {isa = PBXBuildFile; fileRef = AE9FE1E120B2EFEA0043145C /* OK.html */; };
 		AE9FE1E420B2F0DC0043145C /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = AE9FE1E320B2F0DC0043145C /* favorite.png */; };
+		AEA2872E20B93B5D00629FC1 /* backimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AEA2872D20B93B5C00629FC1 /* backimage.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		AE9FE1DF20B2EC370043145C /* login.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
 		AE9FE1E120B2EFEA0043145C /* OK.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = OK.html; sourceTree = "<group>"; };
 		AE9FE1E320B2F0DC0043145C /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		AEA2872D20B93B5C00629FC1 /* backimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backimage.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		557A15EF20B5381800033B6D /* JSBase */ = {
 			isa = PBXGroup;
 			children = (
+				AEA2872D20B93B5C00629FC1 /* backimage.jpeg */,
 				557A15F620B5656C00033B6D /* mario.jpg */,
 				557A15F020B53F5100033B6D /* hellojs.html */,
 				5539428820B660F00084C23F /* hellojs.css */,
@@ -277,6 +280,7 @@
 				557A15F120B53F5100033B6D /* hellojs.html in Resources */,
 				AE3DDE9820B6F01E003921AB /* JSLogin.html in Resources */,
 				55A13CF120B2C4240011FD5F /* LaunchScreen.storyboard in Resources */,
+				AEA2872E20B93B5D00629FC1 /* backimage.jpeg in Resources */,
 				55A13D0320B2C43C0011FD5F /* Hello.html in Resources */,
 				556ED91C20B3F73B00DEE777 /* news.css in Resources */,
 				557A15EC20B519D100033B6D /* sohulayout.html in Resources */,
