@@ -49,6 +49,7 @@
 		AE9FE1E220B2EFEA0043145C /* OK.html in Resources */ = {isa = PBXBuildFile; fileRef = AE9FE1E120B2EFEA0043145C /* OK.html */; };
 		AE9FE1E420B2F0DC0043145C /* favorite.png in Resources */ = {isa = PBXBuildFile; fileRef = AE9FE1E320B2F0DC0043145C /* favorite.png */; };
 		AEA2872E20B93B5D00629FC1 /* backimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AEA2872D20B93B5C00629FC1 /* backimage.jpeg */; };
+		AEA2873120B98DF300629FC1 /* RegExp.html in Resources */ = {isa = PBXBuildFile; fileRef = AEA2873020B98DF300629FC1 /* RegExp.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		AE9FE1E120B2EFEA0043145C /* OK.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = OK.html; sourceTree = "<group>"; };
 		AE9FE1E320B2F0DC0043145C /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
 		AEA2872D20B93B5C00629FC1 /* backimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = backimage.jpeg; sourceTree = "<group>"; };
+		AEA2873020B98DF300629FC1 /* RegExp.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RegExp.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		55A13CE320B2C4240011FD5F /* HTML+JavaScript+CSS */ = {
 			isa = PBXGroup;
 			children = (
+				AEA2872F20B98DB300629FC1 /* RegularExp */,
 				557A15EF20B5381800033B6D /* JSBase */,
 				556ED91420B3DE3A00DEE777 /* CSSBase */,
 				AE9FE1DE20B2EC220043145C /* HtmlLogin */,
@@ -217,6 +220,14 @@
 				AE9FE1E120B2EFEA0043145C /* OK.html */,
 			);
 			path = HtmlLogin;
+			sourceTree = "<group>";
+		};
+		AEA2872F20B98DB300629FC1 /* RegularExp */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2873020B98DF300629FC1 /* RegExp.html */,
+			);
+			path = RegularExp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				55A13D0C20B2C4540011FD5F /* qqr2.html in Resources */,
 				55A13D0220B2C43C0011FD5F /* right.html in Resources */,
 				556ED91620B3DE6600DEE777 /* helloCss.html in Resources */,
+				AEA2873120B98DF300629FC1 /* RegExp.html in Resources */,
 				55A13D0D20B2C4540011FD5F /* qqr1.html in Resources */,
 				556ED92020B40F4500DEE777 /* box.css in Resources */,
 				5539428920B660F00084C23F /* hellojs.css in Resources */,

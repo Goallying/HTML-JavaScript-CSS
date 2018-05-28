@@ -2,6 +2,12 @@
 <html>
     <head>
         登录页面
+        <script>
+            function test1(){
+                
+                window.alert(document.getElementById("content").innerText);
+            }
+        </script>
     </head>
     
     <body align="center">
@@ -30,12 +36,12 @@
                 </select>
                 </br>
                 请留言:</br>
-                <textarea cols="30" rows="10">请输入...</textarea></br>
+                <textarea id ="content" cols="30" rows="10">请输入...</textarea></br>
                 请选择你要上传的文件:</br>
                 <input type="file" name="myfile" />请选择文件
                 
                 </br>
-            <input type="submit" value="登录"/>
+            <input type="submit" value="登录" onclick="test1()"/>
 <!--            <input type="image" src="favorite.png" width="64">-->
             <input type="reset" value="重新填写"/>
             <hr color ="red"/>

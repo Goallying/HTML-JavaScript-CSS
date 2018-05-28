@@ -1,0 +1,32 @@
+
+<!DOCTYPE  html>
+<html>
+    <head>
+        <script language="javascript">
+            
+            function $(id){
+                return document.getElementById(id)
+            }
+        
+            function test1(){
+                var con = $("content").value;
+<!--                window.alert(con);-->
+
+<!--g:全局匹配，i:是否区分大小写，\d 任意数字 (/xxxxxx/ 为表达式)-->
+<!--                var reg = /(\d){4}/gi ;-->
+var reg = new RegExp("(\\d){4}","gi");
+                while(res = reg.exec(con)){
+                    window.alert(res[0]);
+                }
+            }
+        
+    
+        </script>
+    </head>
+    
+    <body>
+        <textarea  id="content" rows="10" cols="20">xxx</textarea>
+        <input type="button" value="test" onclick = "test1()"/>
+    </body>
+</html>
+
